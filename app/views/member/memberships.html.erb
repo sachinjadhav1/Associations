@@ -1,0 +1,20 @@
+<table id="memberships">
+  <thead>
+    <tr>
+      <th>Membership Type</th>
+      <th>price</th>
+      
+    </tr>
+  </thead>
+  <% @memberships.each do |membership| %>
+    <tr>
+      <td>
+        <%= membership.typee %>
+      </td>
+      <td>
+        <%= membership.price %>
+      </td>
+     
+    </tr>
+  <% end %>
+</table>

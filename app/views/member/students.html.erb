@@ -1,0 +1,10 @@
+<h1>List Of Students</h1>
+<%= form_tag "/member/clubs", method: :get do  %>
+  <%= collection_select(:student, :id, @students.all, :id, :name_with_id) %>
+   <%= submit_tag "Select Student" %>
+  <p>Advance Rails Project</p>
+  <p>Group Gift's team 4</p>
+  <p>Oke Gift  Nilamben Pansuriya    Sachin Jadhav</p>
+  
+ 
+<% end %>

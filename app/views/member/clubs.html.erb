@@ -1,0 +1,7 @@
+<h1>List Of Clubs</h1>
+<%= form_tag "/member/memberships", method: :get do %>
+  <%= collection_select(:club, :id, @clubs.all, :id, :name) %>
+  <%= submit_tag "Select Club" %>
+<% end %>
+<br/>
+<%= link_to 'Back to Students', member_students_path %>
